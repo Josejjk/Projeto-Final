@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZAS SENAC</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('004 fundo.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        }
+        header {
+            background-color: #e71111;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: rgb(232, 203, 65);
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        article {
+            border: 1px solid #0e0d0d;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #050505;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .image-container {
+            display: flex; /* Ativa o Flexbox */
+            justify-content: space-around; /* Espaçamento uniforme entre imagens */
+            gap: 20px; /* Espaçamento entre as figuras */
+            flex-wrap: wrap; /* Permite quebrar para a próxima linha em telas menores */
+            margin-top: 20px; /* Adiciona espaçamento acima das imagens */
+        }
+
+        figure {
+        text-align: center; /* Centraliza as imagens e legendas */
+        margin: 0; /* Remove a margem padrão */
+        }
+
+        img {
+        max-width: 100%; /* Garante que as imagens não fiquem maiores que o contêiner */
+        height: auto; /* Mantém a proporção das imagens */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PIZZAS SENAC </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#CARDAPIO">CARDAPIO</a></li>
+            <li><a href="#LOCALIZAÇÃO">LOCALIZAÇÃO</a></li>
+            <li><a href="#PEDIDOS">PEDIDOS</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="CARDAPIO">
+            <h2>CARDÁPIO</h2>
+            <article>
+                <h3>Sabores</h3>
+                <div class="image-container">
+                    <figure>
+                        <figcaption>Calabresa</figcaption>
+                        <img src="001 calabresa.jpg" alt="Calabresa" width="448">
+                    </figure>
+                    <figure>
+                        <figcaption>Margarita</figcaption>
+                        <img src="002 margarita.jpg" alt="Margarita" width="400">
+                    </figure>
+                    <figure>
+                        <figcaption>Quatro Queijos</figcaption>
+                        <img src="003 4 quaijos.jpg" alt="Quatro Queijos" width="377">
+                    </figure>
+                </div>
+            </article>
+        </section>
+
+        <section id="LOCALIZAÇÃO">
+            <h2>LOCALIZAÇÃO</h2>
+            <article>
+                <h3>Endereço</h3>
+                <p>Rua Silva JArdim, 360, Centro, Florianópolis - SC.</p>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.970967752134!2d-48.55237832554173!3d-27.59482162399773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952737b49f23f39d%3A0x48f939bcbdfbeb41!2sRua%20Silva%20Jardim%2C%20360%20-%20Centro%2C%20Florian%C3%B3polis%20-%20SC%2C%2088015-110!5e0!3m2!1spt-BR!2sbr!4v1695914765045!5m2!1spt-BR!2sbr" 
+                        width="300"
+                        height="225" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </article>
+            
+        </section>
+
+        <section id="PEDIDOS">
+            <h2>PEDIDOS</h2>
+            <article>
+                <h3>    </h3>
+                <p>Faça seu pedido pelo fone - (48) 9-9136-5510</a>.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 José Juliano Kornelius.</p>
+    </footer>
+</body>
+</html>
